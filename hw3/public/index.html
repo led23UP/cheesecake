@@ -1,0 +1,125 @@
+<!-- DAVID LE -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel ="stylesheet" href="stylesheets/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"/></script>	
+
+
+	
+</head>
+
+
+<script src="javascripts/order.js"></script>
+
+
+
+<body class = "center">
+
+	<!-- Heading -->
+	<h1> Cheesecake Order Form </h1>
+
+	<!-- CheeseCake Image -->
+	<img class = "displayed" src = "https://upload.wikimedia.org/wikipedia/commons/9/9c/Mondays_at_Il_Forno_-_Cheesecake_with_strawberry_sauce.jpg" width= "200" height = "200">
+
+	<br>
+	
+	<p id ="comText"> Quantity Topping </p>
+
+	<!-- Dropdown quantity list & 3 radio button topppings-->
+	<table id="options" class ="center">
+	
+		<tr>
+	
+			<td>
+				<!-- Drop down list -->
+
+				<select id ="quantity">
+					<option value = "1">1</option> 
+					<option value = "2">2</option>
+					<option value = "3">3</option>
+				<br>
+				</select> 
+			</td>
+	
+	
+	
+	
+			<form class = "center">
+
+				<td> 
+					<!-- 3 radio buttons (toppings button) -->
+
+					<input type = "radio" value ="plain" name = "toppings"> 
+					<label for="child"> plain</label><br> 
+	
+					<input type = "radio" value ="cherry" name = "toppings">
+					<label for="cherry"> cherry</label><br>
+	
+					<input type = "radio" value ="chocolate" name = "toppings">
+					<label for="chocolate"> chocolate</label><br>
+				</td>	
+
+			</form>
+		</tr>
+				</td>
+
+
+
+
+	</table>
+
+	
+	
+	
+	<!-- Notes section with text box  -->
+	<p id="notes"> Notes: </p>
+	<textarea id ="txtArea" class ="displayed" rows ="4" cols="50" placeholder="Enter any special instructions here."></textarea>
+
+	
+	<br>
+	<!-- Order Button -->
+	<div>
+		<input id ="obtn" type ="button" value="order">	
+	</div>
+	
+	
+	<!-- Total Orders section -->
+	
+<div class='parent'>
+	 <div class='child'>
+		<h3> Orders for </h3> 
+	 </div>
+	 <div class='child'>
+		<ul class="month" id="selectUl">
+  	  	<li>Jan</li>
+   	  	<li>Feb</li>
+   	  	<li>Mar</li>
+  	  	<li>Apr</li>
+  	  	<li>May</li>
+  	  	<li>Jun</li>
+  	  	<li>Jul</li>
+  	  	<li>Aug</li>
+ 	  	<li>Sep</li>
+	  	<li>Oct</li>
+	  	<li>Nov</li>
+	  	<li>Dec</li>
+		</ul>
+	</div>
+	</div>
+	<div class='orderlist'>	
+		<ul class=>
+        	<li>11 cherry</li>
+        	<li>17 chocolate</li>
+        	<li>11 plain</li>
+    	</ul>
+</div>
+
+
+	
+	
+</body>
+
+
+</html>
